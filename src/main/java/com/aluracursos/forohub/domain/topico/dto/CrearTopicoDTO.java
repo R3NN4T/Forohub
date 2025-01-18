@@ -1,0 +1,16 @@
+package com.aluracursos.forohub.domain.topico.dto;
+
+import com.aluracursos.forohub.domain.topico.Estado;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record CrearTopicoDTO(
+        @NotBlank String titulo,
+        @NotBlank String mensaje,
+//        @NotNull Long autor,
+        @NotBlank String autorEmail,
+        @NotNull Estado estado
+
+) {
+}
+
